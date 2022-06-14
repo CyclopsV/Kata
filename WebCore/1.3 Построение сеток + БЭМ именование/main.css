@@ -24,6 +24,10 @@ img {
     height: 87px;
 }
 
+.navigation>svg:first-of-type {
+    display: none;
+}
+
 .navigation>button {
     background-color: #FF3E79;
     width: 40px;
@@ -45,6 +49,20 @@ img {
 
 .navigation__checkstatus {
     background-image: url(img/checkstatus.svg);
+}
+
+.navigation__call {
+    background-image: url(img/call.svg);
+    margin-left: 250px;
+
+}
+
+.navigation__chat {
+    background-image: url(img/chat.svg)
+}
+
+.navigation__profile {
+    background-image: url(img/profile.svg);
 }
 
 .main__title {
@@ -83,9 +101,9 @@ img {
     text-decoration: none;
 }
 
-.content> :nth-child(2) {
+/* .content> :nth-child(2) {
     display: none;
-}
+} */
 
 .content__text {
     margin-left: 16px;
@@ -97,6 +115,38 @@ img {
     color: #1B1C21;
 }
 
-.content__link > :last-child {
+.content__link> :last-child {
     margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+    .navigation>svg:first-of-type,
+    .navigation__call,
+    .navigation__chat,
+    .navigation__profile {
+        display: flex;
+    }
+
+    .main__content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    img {
+        border-radius:6px;
+    }
+
+    .content__text, .content__img{
+        width: 50%;
+    }
+
+    .content__img {
+        margin: 0 25px;
+    }
+
+    .content__text > [hidden] {
+        display: block;
+        height: 40px;
+        overflow: hidden;
+    }
 }
