@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Likes"),
+        url("../src/fonts/TTLakes-Regular.woff") format("woff");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "TT Lakes";
+}
+
+.menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+
+.menu__header>button,
+.menu__contact>button {
+    background-color: #FF3E79;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.menu__close {
+    background-image: url(../src/img/menu_close.svg);
+}
+
+.menu__search {
+    background-image: url(../src/img/search.svg);
+    margin-left: 50px;
+}
+
+.contact__call {
+    background-image: url(../src/img/call.svg);
+}
+
+.contact__chat {
+    background-image: url(../src/img/chat.svg);
+}
+
+.contact__other {
+    background-image: url(../src/img/profile.svg);
+}
+
+.menu__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40%;
+}
+
+.menu__nav>a {
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 35px;
+    text-decoration: none;
+    color: #1B1C21;
+
+}
+
+.nav__link_active {
+    background-image: url(../src/img/activ.svg);
+    background-repeat: no-repeat;
+    color: #7E7E82 !important;
+}
+
+.menu__footer {
+    padding-left: 25px;
+}
+
+.menu__contact>button {
+    margin-right: 15px;
+}
+
+.menu__footer>a {
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.menu__footer>a:last-of-type {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.menu__lang>a {
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.lang_active {
+    color: #7E7E82 !important;
+}

@@ -1,7 +1,7 @@
 @font-face {
     font-family: "TT Lakes";
     src: local("TT Likes"),
-        url("fonts/TTLakes-Regular.woff") format("woff");
+        url("../src/fonts/TTLakes-Regular.woff") format("woff");
 }
 
 body {
@@ -40,29 +40,29 @@ img {
 }
 
 .navigation__menu {
-    background-image: url(img/menu.svg);
+    background-image: url(../src/img/menu.svg);
 }
 
 .navigation__repair {
-    background-image: url(img/repair.svg);
+    background-image: url(../src/img/repair.svg);
 }
 
 .navigation__checkstatus {
-    background-image: url(img/checkstatus.svg);
+    background-image: url(../src/img/checkstatus.svg);
 }
 
 .navigation__call {
-    background-image: url(img/call.svg);
+    background-image: url(../src/img/call.svg);
     margin-left: 250px;
 
 }
 
 .navigation__chat {
-    background-image: url(img/chat.svg)
+    background-image: url(../src/img/chat.svg)
 }
 
 .navigation__profile {
-    background-image: url(img/profile.svg);
+    background-image: url(../src/img/profile.svg);
 }
 
 
